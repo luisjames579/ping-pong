@@ -42,16 +42,18 @@ function draw(){
   movimentoBolinha();
   raquetes(xRaquete,yRaquete)
   raquetes(xRaqueteOponente,yRaqueteOponente)
-  npc(dificuldade)
+  npc(dificuldade);
   
   if(keyIsDown(UP_ARROW)){
     yRaquete -= 10}
   
   if(KeyIsDown(DOWN_ARROW)){
     yRaquete += 10}
+  
   if(xBolinha -raio < xRaquete + 10 & yBolinha-raio< yRaquete + 90 & yBolinha +raio > yRaquete ){
     velocidadeXBolinha *= -1;
     raquetada.play()}
+if (xBolinha + raio >xRaqueteOponente & yBolinha - raio < yRaqueteOponente + 90 &) {velocidadexBolinha *= -1; raquetada.play()}
   
 }
 
